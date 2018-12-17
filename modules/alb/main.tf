@@ -25,7 +25,7 @@ resource "aws_alb_listener" "wordpress" {
   port = "80"
   protocol = "HTTP"
   default_action {
-      target_group_arn = "${aws_alb_target_group.test.id}"
+      target_group_arn = "${aws_alb_target_group.test.arn}"
       type = "forward"
   }
 }

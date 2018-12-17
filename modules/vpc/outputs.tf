@@ -8,7 +8,7 @@ output "sg_web" {
   value = ["${aws_security_group.web.id}"]
 }
 output "sg_db" {
-  value = ["${aws_security_group.db.id}"]
+  value = "${aws_security_group.db.id}"
 }
 output "db_subnets" {
   value = "${aws_db_subnet_group.db_subnets.id}"

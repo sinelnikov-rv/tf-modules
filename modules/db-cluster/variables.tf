@@ -18,10 +18,10 @@ variable "max_capacity" {
   default = "4"
 }
 variable "sg_db" {
-  type = "list"
+  
 }
 variable "subnets" {
-  
+
 }
 
 

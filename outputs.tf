@@ -1,3 +1,3 @@
-output "db_endpoint" {
-  value = "${module.db.endpoint}"
-}
+# output "db_endpoint" {
+#   value = "${module.db.endpoint}"
+# }
