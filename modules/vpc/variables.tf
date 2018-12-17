@@ -8,5 +8,5 @@ variable "ipv6" {
   default = false
 }
 variable "avz" {
-  default = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]  
+  default = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]  
 }

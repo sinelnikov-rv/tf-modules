@@ -1,3 +1,5 @@
 .dist/
 .terraform/
 *.code*
+*.plan
+terraform.*
