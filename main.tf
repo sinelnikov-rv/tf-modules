@@ -13,17 +13,10 @@ module "db" {
   sg_db = "${module.vpc.sg_db}"
   subnets = "${module.vpc.db_subnets}"
 }
-module "elb" {
-  source = "./modules/elb"
+module "alb" {
+  source = "./modules/alb"
   subnets = "${module.vpc.subnets}"
   security_groups = "${module.vpc.sg_web}"
-  listener = [
-    {
-      instance_port = "80"
-      instance_protocol = "HTTP"
-      lb_port = "80"
-      lb_protocol = "HTTP"
-    }
-  ]
+  vpc_id = "${module.vpc.vpc_id}"
 }
 
